@@ -24,7 +24,6 @@ tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", f
 end)
 
 tab.newSlider("Slider", "Epic slider", 100, false, function(num)
-    game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = num
     end
