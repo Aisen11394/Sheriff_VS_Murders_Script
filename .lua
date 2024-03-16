@@ -1,5 +1,5 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-local window = DrRayLibrary:Load("DrRay", "Default")
+local window = DrRayLibrary:Load("Sheriff VS Murder", "Default")
 
 local tab = DrRayLibrary.newTab("Main", "6957914583")
 
@@ -16,10 +16,10 @@ tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState
 end)
 
 tab.newInput("Input", "Prints your input.", function(text)
-    print("Entered text: " .. text)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = text
 end)
 
-tab.newKeybind("Input Key", "Change JumpPower", function(key)
+tab.newKeybind("Input Key", "Soon", function(key)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = key
 end)
 
