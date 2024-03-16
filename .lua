@@ -1,7 +1,7 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("DrRay", "Default")
 
-local tab = DrRayLibrary.newTab("Main", "11600511955")
+local tab = DrRayLibrary.newTab("Main", "6957914583")
 
 tab.newButton("Button", "Prints Hello!", function()
     print('Hello!')
@@ -23,7 +23,7 @@ tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", f
     print(key)
 end)
 
-tab.newSlider("Slider", "Change Walkspeed", 16, 100, false, function(num)
+tab.newSlider("Slider", "Change Walkspeed", 100, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = num
