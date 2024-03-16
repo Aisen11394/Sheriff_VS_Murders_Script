@@ -23,7 +23,7 @@ tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", f
     print(key)
 end)
 
-tab.newSlider("Slider", "Change Walkspeed", 100, false, function(num)
+tab.newSlider("Slider", "Change Walkspeed", 16, 100, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = num
