@@ -15,8 +15,8 @@ tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState
     end
 end)
 
-tab.newInput("Input", "Prints your input.", function(text)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = text
+tab.newInput("Input", "Change WalkSpeed", function(text)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = text
 end)
 
 tab.newKeybind("Input Key", "Soon", function(key)
