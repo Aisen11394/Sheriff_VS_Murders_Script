@@ -1,7 +1,7 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("DrRay", "Default")
 
-local tab = DrRayLibrary.newTab("Main", "ImageIdHere")
+local tab = DrRayLibrary.newTab("Main", "11600511955")
 
 tab.newButton("Button", "Prints Hello!", function()
     print('Hello!')
