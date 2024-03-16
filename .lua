@@ -16,16 +16,19 @@ tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState
 end)
 
 tab.newInput("Input", "Change Walkspeed", function(text)
+        game:GetService("RunService").RenderStepped:wait()
+while task.wait() do
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = text
+        end
 end)
 
 tab.newKeybind("Input Key", "Soon", function(key)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = key
 end)
 
-tab.newSlider("Slider", "Change Walkspeed", 150, false, function(num)
+tab.newSlider("Slider", "Change Jump Power", 150, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = num
-     end
+        end
 end)
