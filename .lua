@@ -19,13 +19,13 @@ tab.newInput("Input", "Prints your input.", function(text)
     print("Entered text: " .. text)
 end)
 
-tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", function(key)
-    print(key)
+tab.newKeybind("Input Key", "Change JumpPower", function(key)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = key
 end)
 
 tab.newSlider("Slider", "Change Walksperd", 150, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = num
+     game.Players.LocalPlayer.Character.Humanoid.JumpPower = num
      end
 end)
