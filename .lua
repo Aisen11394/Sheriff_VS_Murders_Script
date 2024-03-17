@@ -9,7 +9,7 @@ end)
 
 tab.newToggle("Toggle", "Off/On ESP", true, function(toggleState)
     if toggleState then
-        loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESP/main/ON.lua"))()
     else
         print("Off")
     end
