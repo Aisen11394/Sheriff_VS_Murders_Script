@@ -23,13 +23,20 @@ while task.wait() do
         end
 end)
 
+tab.newInput("Input", "Change JumpPower", function(text)
+        game:GetService("RunService").RenderStepped:wait()
+while task.wait() do
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = text
+        end
+end)
+
 tab.newKeybind("Input Key", "Soon", function(key)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = key
 end)
 
-tab.newSlider("Slider", "Change Jump Power", 150, false, function(num)
+tab.newSlider("Slider", "???", 150, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = num
+     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
         end
 end)
