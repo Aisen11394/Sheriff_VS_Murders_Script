@@ -12,7 +12,7 @@ tab.newToggle("Toggle", "Off/On ESP", true, function(toggleState)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESP/main/ON.lua"))()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESPP/main/.lua"))()
     else
-        print('A')
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/EspOff/main/Esp.lua"))()
     end
 end)
 
