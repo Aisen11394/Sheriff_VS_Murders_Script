@@ -3,16 +3,16 @@ local window = DrRayLibrary:Load("Sheriff VS Murder", "Default")
 
 local tab = DrRayLibrary.newTab("Main", "6957914583")
 
-tab.newButton("Button", "Prints Hello!", function()
-    print('Hello!')
+tab.newButton("Esp/Big Hitbox", "Esp/Big Hitbox", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESP/main/ON.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESPP/main/.lua"))()
 end)
 
-tab.newToggle("Toggle", "Off/On ESP", true, function(toggleState)
+tab.newToggle("Toggle", "Toggle", true, function(toggleState)
     if toggleState then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESP/main/ON.lua"))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/ESPP/main/.lua"))()
+        md
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Aisen11394/EspOff/main/Esp.lua"))()
+        kr
     end
 end)
 
