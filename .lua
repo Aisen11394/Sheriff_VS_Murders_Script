@@ -10,9 +10,9 @@ end)
 
 tab.newToggle("Toggle", "Toggle", true, function(toggleState)
     if toggleState then
-        djdn
+        print("hell")
     else
-        kfkkrr
+        print("hell")
     end
 end)
 
@@ -37,6 +37,6 @@ end)
 tab.newSlider("Slider", "???", 150, false, function(num)
 game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+     print("hell")
         end
 end)
